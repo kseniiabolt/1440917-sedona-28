@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ksu Guru](https://up.htmlacademy.ru/htmlcss/28/user/1440917).
-* Наставник: `Неизвестно`.
+* Наставник: https://htmlacademy.ru/profile/irina-malinovskaya.
 
 ---
 
