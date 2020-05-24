@@ -7,7 +7,6 @@
   <body>
 
     <header>
-      
         <a href="index.html">
           <img src="./img/logo.svg" width="130" height="70" alt="City of Sedona">
         </a>
@@ -38,20 +37,19 @@
           <section>
             <h2>Настоящий городок</h2>
             <p>№1 <br> Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="./img/img_index_home.jpg" alt="Дом на фоне горы">
+            <img src="./img/img_index_home.jpg" alt="House near the mountain">
             
               <ul class="info">
                 <li>
-                  <!--Размеры изображения можно настроить в CSS?-->
-                  <img src="./img/icons/icon-1_house (1).svg" alt="House"> 
+                  <img src="./img/icons/icon-1_house.svg" alt="House"> 
                   <div>Жилье <br> Рекомендуем пожить в настоящем мотеле, всё как в кино!</div>
                 </li>
                 <li>
-                  <img src="./img/icons/icon-3_food (1).svg" alt="Food">
+                  <img src="./img/icons/icon-3_food.svg" alt="Food">
                   <div>Еда <br> Всегда заказывайте фирменный бургер, вы не разочаруетесь!</div>
                 </li>
                 <li>
-                  <img src="./img/icons/icon-2_gift (1).svg" alt="Gifts">
+                  <img src="./img/icons/icon-2_gift.svg" alt="Gifts">
                   <div>Сувениры <br> Не только китайского, но и местного
                   производства!</div>
                 </li>
@@ -77,10 +75,44 @@
               </ul>
           </section>
          
-          <section>
+          <section class="form_search">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br>  и мы покажем вам лучшие предложения гостиниц в Cедоне  </p>
               <!--Форма поиска гостиницы-->
+                <form action="https://echo.htmlacademy.ru/" method="POST">
+                  <p>
+                    <h3 class="form_title">Поиск гостиницы в Седоне</h3>
+                    <label for="arrivel-date">Дата заезда</label>
+                    <input id="arrivel-date" type="text" name="date" placeholder="24 апреля 2017">
+                    <img src="./img/icons/calendar.svg" alt="Calendar">
+                  </p>
+
+                  <p>
+                    <label for="depature-date">Дата выезда</label>
+                    <input id="depature-date" type="text" name="date" placeholder="4 июля 2017">
+                    <img src="./img/icons/calendar.svg" alt="Calendar">
+                  </p>
+                  <p>
+                    <label for="adults">Взрослые</label>
+                    <button type="button" spinner-button="down">-</button>
+                    <input type="number" min="0" step="1" value="2">
+                    <button type="button" spinner-button="up">+</button>
+                  </p>
+
+                  <p>
+                    <label for="children">Дети</label>
+                    <button type="button" spinner-button="down">-</button>
+                    <input type="number" min="0" step="1" value="0">
+                    <button type="button" spinner-button="up">+</button>
+                  </p>
+                  <button type="submit">Найти гостиницу</button>
+                </form>
+
+               <!--<img src="./img/map.png" alt="Sedona hotels" usemap="#map">
+                  <map name="we're here"> 
+                    <area shape="rect" coords="" href="" alt="">   
+                  </map>
+                -->     
           </section>
       </main>
       
@@ -96,12 +128,7 @@
               <li><a href="#">Youtube</a></li>
             </ul>
 
-           <!--<p>
-              Разработано:
-              <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-              <img src="/img/logo/logo-htmlacademy.svg" width="115" height="41" alt="logo HTML Academy">
-            </p>-->
-            <p>
+              <p>
               Website by
               <a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="./img/logo-htmlacademy.svg" width="115" height="41" alt="logo HTML Academy">

@@ -21,9 +21,60 @@
       </header>
 
       <main>
-        <h1>Фильтр</h1>
+        <h1 class="visually-hidden">Фильтр</h1>
         <!--Форма фильтра-->
+        <form action="https://echo.htmlacademy.ru" method="GET" id="S">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li> 
+                <input type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассенй</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li><input type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartament" id="filter-apartament" checked>
+                <label for="filter-apartament">Апартаменты</label>
+              </li>
+            </ul>
 
+            <!--<legend>Стоимость в сутки (Р):</legend>
+              <label for="quantity">От</label>
+              <input type="range" name="quantity" id="filter-quantity" value="3000">
+              <label for="quantity">До</label> <br>
+              <input type="submit" form="S">
+              <h2>Найдено: 3</h2>
+              <h3>Сортировка:</h3>
+              <select id="sort" name="sort" class="form-control">
+                <option value="price_asc">По цене</option>
+                <option value="price_desc">По цене</option>
+                <option value="rating_desc">По популярности</option>
+                <option value="good_asc">По названию</option>
+                <option value="good_desc">По рейтингу</option>
+              </select>     
+              <span>Cтрелки</span>-->          
+          </fieldset>
+        </form>
+          
+          
         <section>
           <ul>
             <li>
@@ -93,10 +144,6 @@
         <li><a href="#">Youtube</a></li>
       </ul>
 
-      <!--<p>
-        Разработано:
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </p>-->
       <p>
         Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
