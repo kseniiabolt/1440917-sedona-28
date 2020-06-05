@@ -3,55 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
-  <body>
+
+  <body class="page-body">
+
     <header>
       <a href="index.html">
         <img src="./img/logo.svg" width="130" height="70" alt="City of Sedona">
       </a>
 
-      <nav>
-          <ul>
-            <li><a href="">Информация</a></li>
-            <li><a href="">Фото и Видео</a></li>
-            <li><a href="">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
+      <header class="main-header">
+        <div class="main-header-logo">
+          <a href="index.html">
+            <img src="./img/logo.svg" width="130" height="70" alt="City of Sedona">
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li class="site-item"><a class="site-link" href="">Информация</a></li>
+            <li class="site-item"><a class="site-link" href="">Фото и Видео</a></li>
+            <li class="site-item"><a class="site-link" href="">Карта штата</a></li>
+            <li class="site-item"><a class="site-link" href="hotels.html" target="blank">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
 
-      <main>
+      <main class="page-hotels container">
         <h1 class="visually-hidden">Фильтр</h1>
         <!--Форма фильтра-->
-        <form action="https://echo.htmlacademy.ru" method="GET" id="S">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="GET" id="S">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
-              <li> 
-                <input type="checkbox" name="pool" id="filter-pool" checked>
+              <li class="filter-option filter-checkbox"> 
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked>
                 <label for="filter-pool">Бассенй</label>
               </li>
-              <li>
-                <input type="checkbox" name="parking" id="filter-parking">
+              <li class="filter-option filter-checkbox"> 
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
                 <label for="filter-parking">Парковка</label>
               </li>
-              <li>
-                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+              <li class="filter-option filter-checkbox"> 
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
                 <label for="filter-wi-fi">Wi-Fi</label>
               </li>
             </ul>
           
             <legend>Тип жилья:</legend>
             <ul>
-              <li>
-                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+              <li class="filter-option filter-checkbox"> 
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
                 <label for="filter-hotel">Гостиница</label>
               </li>
-              <li><input type="checkbox" name="motel" id="filter-motel" checked>
+              <li class="filter-option filter-checkbox"> 
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
                 <label for="filter-motel">Мотель</label>
               </li>
-              <li>
-                <input type="checkbox" name="apartament" id="filter-apartament" checked>
+              <li class="filter-option filter-checkbox"> 
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="apartament" id="filter-apartament" checked>
                 <label for="filter-apartament">Апартаменты</label>
               </li>
             </ul>
@@ -74,15 +86,16 @@
           </fieldset>
         </form>
           
-          
-        <section>
+        <section class="page-hotels list">
           <ul>
             <li>
               <div>
                 <img src="./img/Amara Resort & Spa.jpg" width="135" height="90" alt="Hotel Amara Resort & Spa">
               </div>
               <div>
-                <h3>Amara Resort & Spa</h3>
+                
+                  <h3>Amara Resort & Spa</h3>
+                
                 <p>гостиница от 4000р.</p>
               </div>
                 <div>
@@ -132,24 +145,37 @@
         </section>
       </main>
     
-    <footer>
-      <div>
-        <h2>#VISITSEDONA</h2>
-        <a href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
-      </div>
-
-      <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Youtube</a></li>
-      </ul>
-
-      <p>
-        Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="./img/logo-htmlacademy.svg" width="115" height="41" alt="logo HTML Academy">
-        </a>
-      </p>
+      <footer class="main-footer">
+        <div class="container">
+          <div class="footer-contacts"
+            <h2>#VISITSEDONA</h2>
+            <a class="footer-link" href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
+          </div>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer-copyright">
+            Website by
+            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="./img/logo-htmlacademy.svg" width="115" height="41" alt="logo HTML Academy">
+            </a>
+          </p>
     </footer>
   </body>
 </html>
