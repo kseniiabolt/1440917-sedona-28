@@ -1,5 +1,7 @@
 * {
    box-sizing: border-box; 
+   margin: 0;
+   padding: 0;
 }
 
 :root {
@@ -11,48 +13,125 @@
     --special-colour: #766357;
 }
 
-body {
-    width: 1240px;
-    margin: 0px;
-    padding: 0px;
+.page-body {
+    width: 1280px;
+    margin-left: 40px;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 21px;
     color: var(--basic-black);
     text-transform: uppercase;
+    box-shadow: 40px 0px rgba(136, 136, 136, 0.3);   
 }
 
 a {
     text-decoration: none;
-  }
+}
   
 img {
     max-width: 100%;
     height: auto;
-  }
+}
 
-.main-navigation {
-    font-size: 14px;
-    line-height: 26px;
-    color: var(--basic-black);
-    background-color: transparent;
+.main-header {
+    width: 100%;
+    min-height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-navigation {
+    width: 138px;
+    height: 70px;
+    position: absolute;   
 }
 
 .site-navigation {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
     list-style: none;
 }
 
-.main-navigation-wrapper {
-    background-color: var(--basic-black);
-}
+.left-item,
+.right-item {
+    margin: 15px 140px;
+    width: 98px;
+    min-height: 26px;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}  
 
 .site-navigation-current a:not([href]) {
     background-color: var(--basic-black);
 }
 
+.site-navigation a:active {
+    background-color: #000000;
+    opacity: 0.3;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color: var(--basic-extra-dark);
+    background-color: var(--basic-colour);
+}
+
+.intro {
+    position: relative;
+    width: 1200px;
+    min-height: 509px;       
+}
+
+.intro-img {
+    position: absolute;
+    width: 100%;  
+}
+
+.intro-slogan {
+    position: absolute;
+    width: 457px;
+    height: 351px;
+    margin-top: 78px;
+    margin-left: 372px;
+}
+.intro-mask {
+    position: absolute;
+    width: 100%;
+    min-height: 57px;
+    background-image: url(../img/intro-mask.svg);
+    top: 453px;
+}
+
+.advantage-slogan {
+    width: 100%;
+    min-height: 216px;
+    text-align: center;
+}
+
+.advantage-title {
+    margin-top: 41px;
+    margin-right: 365px;
+    margin-left: 365px;
+    margin-bottom: 16px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.advantage-text {
+    
+    margin-left: 340px;
+    margin-right: 340px;
+    margin-bottom: 51px;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.description {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    
 }
